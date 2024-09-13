@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Keya Patel - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Keya Patel
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://static.vecteezy.com/system/resources/previews/000/227/871/original/female-developer-vector.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Keya Patel! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am software developer with 1 years of experience in both application and presentation layers.
+            Skill at writing clear, concise code that is easy to maintain and troubleshoot. Able to work independently of remote locations or in office environments as needed by the company.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://pluspng.com/img-png/python-logo-png-open-2000.png"/>
+            <h6>Python</h6>
+            <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://www.pngplay.com/wp-content/uploads/6/Analysis-Round-Icon-PNG.png"/>
+            <h6>Data Analysis</h6>
+            <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png"/>
+            <h6>Git</h6>
+            <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://static.vecteezy.com/system/resources/previews/022/101/050/original/java-logo-transparent-free-png.png"/>
+            <h6>Java</h6>
+            <p>1 years experience</p>
+        </div>
+
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Building Contact Sheet</h3>
+            <ul>
+              <li>Creating nine different variants based on the brightness of that image.
+                Changed the colors of the image, creating variations based on a single
+                photo. Changing the image one color channel at a time</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Word search game</h3>
+            <ul>
+              <li>Creating a board of uppercase letters that is read from a file and non
+                empty words list read from file. Getting the inputs from the player. If the
+                player guessed the correct word and is also available in the words list file ,
+                the player gets points according to the number of words he guessed
+                correctly.
+                </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Create Ping-Pong game </h3>
+            <ul>
+              <li>Creating a game window with two paddles and a ball. Moving paddles
+                with keyboard and moving ball. Bouncing the ball off with paddles.
+                Adding a scoring system</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+           She is sincere and passionate about solving client-related problems and writing code while working in our software department. She has tremendous potential and respects her superiors while enthusiastically tackling all assignments.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I am confident that she can be able to meet any challenge you offer her, and I believe that you will be very pleased with her work and unique ideas.She is a friendly, easy-going person and well-liked by all our co-workers and clients.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          She has been one of our best assets in the organization and has worked under my supervision for those two years.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
