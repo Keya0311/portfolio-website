@@ -1,2 +1,2 @@
 # portfolio-website
-created porfolio website using HTML ,CSS, and javascript.
+created portfolio website using HTML ,CSS, and Javascript.
